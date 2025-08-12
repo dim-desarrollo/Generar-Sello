@@ -270,19 +270,19 @@ agent any
     }
 */
        
-    stage('Message finish deploy') {
+//     stage('Message finish deploy') {
 
-        steps {
+//         steps {
 
-            sh "echo ${HORA_DESPLIEGUE}"
+//             sh "echo ${HORA_DESPLIEGUE}"
 
-            discordSend description: "Deploy de Bk-Domicilio-Fiscal echo!!!", footer: "Hora de inicio de despliegue: ${HORA_DESPLIEGUE} ", link: env.BUILD_URL, result: currentBuild.currentResult, title: "Deploy BackEnd-domicilio-fiscal", webhookURL: "https://discord.com/api/webhooks/1173648912838561922/iB8YUryvKbcj66EWQa2e6161BDuygkfaMx57VUalxPnDAMvoRHcYKxJTaxV4nfBEdoxi"
+//             discordSend description: "Deploy de Bk-Domicilio-Fiscal echo!!!", footer: "Hora de inicio de despliegue: ${HORA_DESPLIEGUE} ", link: env.BUILD_URL, result: currentBuild.currentResult, title: "Deploy BackEnd-domicilio-fiscal", webhookURL: "https://discord.com/api/webhooks/1173648912838561922/iB8YUryvKbcj66EWQa2e6161BDuygkfaMx57VUalxPnDAMvoRHcYKxJTaxV4nfBEdoxi"
 
-        }
+//         }
 
-    }
+//     }
 
-   }
+//    }
 
  }
 
