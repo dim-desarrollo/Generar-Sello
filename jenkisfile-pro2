@@ -35,7 +35,7 @@ agent any
 
         HORA_DESPLIEGUE = sh(returnStdout: true, script: "date '+%A %W %Y %X'").trim()
 
-        GITHUB_DESPLIEGUE_URL = "https://github.com/Facundodg/Generar-Sello.git"
+        GITHUB_DESPLIEGUE_URL = "https://github.com/dim-desarrollo/Generar-Sello.git"
 
         SONARQUBE_CREDENCIALES = 'sonarqube'
         PUERTO_EXTERNO = 5050
