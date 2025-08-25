@@ -28,7 +28,7 @@ agent any
         // Install the Maven version configured as "M3" and add it to the path.
         maven "maven3.8.8"
         jdk 'java17'
-        dockerTool 'docker24.0.4'
+        // dockerTool 'docker24.0.4'
     }
 
     environment {
