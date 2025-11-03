@@ -153,9 +153,9 @@ public class SelloServiceImpl implements SelloServicios {
 
         //obtenerDatos
 
-        int opcion = (int) id_tramite;
+        long opcion =  id_tramite;
 
-        if((int)id_tramite == 1 || (int) id_tramite == 522 || (int)id_tramite == 549 || (int) id_tramite == 550 || (int) id_tramite == 552 || (int) id_tramite == 561 || (int) id_tramite == 652)
+        if(id_tramite == 1 ||  id_tramite == 522 || id_tramite == 549 ||  id_tramite == 550 ||  id_tramite == 552 ||  id_tramite == 561 ||  id_tramite == 652)
         {
             id_tramite = 1; 
         }
