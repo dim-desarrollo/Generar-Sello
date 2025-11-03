@@ -170,7 +170,7 @@ public class SelloServiceImpl implements SelloServicios {
 
             double costo = 17.0;
 
-            if (id_tramite == 1) {
+            if (id_tramite == 1 || id_tramite == 522 || id_tramite == 549 || id_tramite == 550 || id_tramite == 552 || id_tramite == 561 || id_tramite == 652) {
 
                 System.out.println(respuestaAlmacenada.get(3).toString());
 

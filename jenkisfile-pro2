@@ -194,7 +194,7 @@ agent any
                     */
 
                         // Construir la nueva imagen
-                        sh "docker build -t ${IDENTIFICADOR_IMAGEN}:121 ."
+                        sh "docker build -t ${IDENTIFICADOR_IMAGEN}:122 ."
 
                         // Ejecutar el nuevo contenedor
                         /*
