@@ -155,6 +155,11 @@ public class SelloServiceImpl implements SelloServicios {
 
         int opcion = (int) id_tramite;
 
+        if((int)id_tramite == 1 || (int) id_tramite == 522 || (int)id_tramite == 549 || (int) id_tramite == 550 || (int) id_tramite == 552 || (int) id_tramite == 561 || (int) id_tramite == 652)
+        {
+            id_tramite = 1; 
+        }
+
         List<Object[]> resultados = selloRepocitory.obtenerSello(id_tramite,categoria,2024);
 
         //List<Object[]> resultados = obtenerDatos(opcion);
@@ -170,7 +175,7 @@ public class SelloServiceImpl implements SelloServicios {
 
             double costo = 17.0;
 
-            if (id_tramite == 1 || id_tramite == 522 || id_tramite == 549 || id_tramite == 550 || id_tramite == 552 || id_tramite == 561 || id_tramite == 652) {
+            if (id_tramite == 1 ) {
 
                 System.out.println(respuestaAlmacenada.get(3).toString());
 
@@ -199,7 +204,7 @@ public class SelloServiceImpl implements SelloServicios {
                         .tipoCategoria(categoria)
                         .importeTotal(conceptoDTO.getCategoria() + conceptoDTO.getFactibilidad() + conceptoDTO.getTasaAdministrativa() + conceptoDTO.getInspeccion())
                         .conceptoDTO(conceptoDTO)
-                        .id_tramite(id_tramite)
+                        .id_tramite(opcion)
                         .cuit(cuit)
                         .build();
 
@@ -221,7 +226,7 @@ public class SelloServiceImpl implements SelloServicios {
                         .tipoCategoria(categoria)
                         .importeTotal(conceptoReinspeccion.getInspeccion())
                         .conceptoDTO(conceptoReinspeccion)
-                        .id_tramite(id_tramite)
+                        .id_tramite(opcion)
                         .cuit(cuit)
                         .build();
 
