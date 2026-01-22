@@ -107,14 +107,14 @@ public class SelloServiceImpl implements SelloServicios {
                     .anio(Integer.parseInt(String.valueOf(newArray[2])))
                     .build();
 
-
-            if (contribuyente.getAnio() != 2025) { //cambiar ya que este se tiene que poder ser dinamico
+            // 
+            if (contribuyente.getAnio() != 2026) {  //incrementar en +1 el año 
 
                 ResponceDTO responce = new ResponceDTO("fail"
                         , null
                         , "404"
                         , "com.dim.exception.GenericException.ContribuyenteNoCategorizadoEnEsteAnio"
-                        , "El contribuyente no fue categorizado para el año 2025, ultima categorizacion " + String.valueOf(newArray[2]) + ".");
+                        , "El contribuyente no fue categorizado para el año 2026, ultima categorizacion " + String.valueOf(newArray[2]) + ".");
                 return responce;
 
             }
